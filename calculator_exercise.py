@@ -15,22 +15,19 @@ def divide(x, y):
 print("Simple Calculator\n\n1.addition(+)\n2.substraction(-)\n3.multlipication(x)\n4.division(:)\n")
 
 while True:
-
+    
     operator = input("Pick an operator (using the symbol): ")
+    first = input("Input first number: ")
+    second = input("Input second number: ")
 
-    while operator == "+" or operator == "-" or operator == "x" or operator == ":":
-
-        first = input("Input first number: ")
-        second = input("Input second number: ")
-
-        if operator == "+":
-            print(first, "+", second, "=", int(first) + int(second))
-        elif operator == "-":
-            print(first, "-", second, "=", int(first) - int(second))
-        elif operator == "x":
-            print(first, "x", second, "=", int(first) * int(second))
-        elif operator == ":":
-            print(first, ":", second, "=", int(first) / int(second))
+    if operator == "+":
+        print(first, "+", second, "=", int(first) + int(second))
+    elif operator == "-":
+        print(first, "-", second, "=", int(first) - int(second))
+    elif operator == "x":
+        print(first, "x", second, "=", int(first) * int(second))
+    elif operator == ":":
+        print(first, ":", second, "=", int(first) / int(second))
     else:
         print("Operator is not supported")
 
